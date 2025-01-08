@@ -48,6 +48,102 @@ module test_bench;
 			check_result(calc_expected(data_in,sel,en));
 			#10;
 		end
+		
+		en = 1;
+		data_in = 16'b1010101010101010;
+		sel = 4'b0000;
+		#1;
+		check_result(0);
+
+		en = 1;
+                data_in = 16'b1010101010101010;
+                sel = 4'b0001;
+                #1;
+                check_result(1);
+
+		en = 1;
+		data_in = 16'b1010101010101010;
+		sel = 4'b0010;
+		#1;
+		check_result(0);
+
+		en = 1;
+		data_in = 16'b1010101010101010;
+		sel = 4'b0011;
+		#1;
+		check_result(1);
+
+		en = 1;
+		data_in = 16'b1010101010101010;
+		sel = 4'b0100;
+		#1;
+		check_result(0);
+
+		en = 1;
+		data_in = 16'b1010101010101010;
+		sel = 4'b0101;
+		#1;
+		check_result(1);
+
+		en = 1;
+		data_in = 16'b1010101010101010;
+		sel = 4'b0110;
+		#1;
+		check_result(0);
+
+		en = 1;
+		data_in = 16'b1010101010101010;
+		sel = 4'b0111;
+		#1;
+		check_result(1);
+
+		en = 1;
+                data_in = 16'b1010101010101010;
+                sel = 4'b1000;
+                #1;
+                check_result(0);
+  
+                en = 1;
+                data_in = 16'b1010101010101010;
+                sel = 4'b1001;
+                #1;
+                check_result(1);
+  
+                en = 1;
+                data_in = 16'b1010101010101010;
+                sel = 4'b1010;
+                #1;
+                check_result(0);
+  
+                en = 1;
+                data_in = 16'b1010101010101010;
+                sel = 4'b1011;
+                #1;
+                check_result(1);
+  
+                en = 1;
+                data_in = 16'b1010101010101010;
+                sel = 4'b1100;
+                #1;
+                check_result(0);
+  
+                en = 1;
+                data_in = 16'b1010101010101010;
+                sel = 4'b1101;
+                #1;
+                check_result(1);
+ 
+                en = 1;
+                data_in = 16'b1010101010101010;
+                sel = 4'b1110;
+                #1;
+                check_result(0);
+ 
+               en = 1;
+               data_in = 16'b1010101010101010;
+               sel = 4'b1111;
+               #1;
+               check_result(1);
 
 		#100;
 		$finish;
@@ -77,4 +173,3 @@ module test_bench;
 		end
 	endtask
 endmodule
-
